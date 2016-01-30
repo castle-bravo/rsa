@@ -37,7 +37,8 @@ to do:
 reference:
   RSA Cryptosystem
     <https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29>
-  Note: I have tried to use the same variable names
+  Note: I have tried to use the same variable names as in the Wikipedia
+        wherever possible.
 '''
 
 import math
