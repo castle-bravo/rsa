@@ -33,6 +33,13 @@ to do:
       appending spaces to the end of the bytestring. This is fine for
       text files, but is not appropriate for binary files.
   4.  Support encryption of arbitrary-sized binary files.
+  5.  Support encryption of a list of files. Proposed pipeline:
+        gzip [files] -> encrypt -> decrypt -> gunzip -> [files]
+  6.  Improve efficiency of primality test. This can be done using a
+      function is_prime(n), which performs a small number of Fermat
+      primality tests to elimnate obvious composites, then employs
+      some number of rounds of Miller-Rabin, Solovay-Strassen, or
+      Frobenius primality tests.
 
 reference:
   RSA Cryptosystem
